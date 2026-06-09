@@ -501,21 +501,3 @@ ul {
   color: white;
   border-color: #3b7a57;
 }
-
-/* Responsive container for the Figma Embed */
-.iframe-wrapper {
-  width: 100%;
-  margin: 1.5rem 0; /* Creates nice breathing room above and below the embed */
-  overflow: hidden;
-  border-radius: 8px; /* Smooth corners matching your theme */
-  border: 1px solid #e0dbd1; /* Standard border that will shift with dark mode */
-}
-
-.iframe-wrapper iframe {
-  display: block;
-}
-
-/* Ensure the layout adapts seamlessly if your body has the dark class */
-.dark .iframe-wrapper {
-  border-color: #444;
-}
