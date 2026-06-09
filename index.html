@@ -47,10 +47,20 @@
         <p class="section-label">01 &#8212; Work</p>
         <h2 class="section-title">Projects</h2>
 
+        <div class="filter-container">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="code">Code</button>
+          </div>
+          <p id="project-count" class="project-count">Showing all projects</p>
+        </div>
+
         <div class="projects-grid">
 
           <!-- Project 1: Tide -->
-          <article class="card reveal">
+          <article class="card reveal" data-category="design">
             <span class="card-tag">UI / UX Design</span>
             <h3 class="card-title">Tide</h3>
             <p class="card-desc">A complete task-manager app design built in Figma: a token-based design system, seven connected screens, and a clickable prototype. My first end-to-end product design.</p>
@@ -63,7 +73,7 @@
           </article>
 
           <!-- Project 2: Folio -->
-          <article class="card reveal">
+          <article class="card reveal" data-category="web">
             <span class="card-tag">Web Development</span>
             <h3 class="card-title">Folio</h3>
             <p class="card-desc">This portfolio site. Hand-written semantic HTML, a CSS design system carried straight from my Figma tokens, and a dark-mode toggle in vanilla JavaScript. Deployed on Netlify.</p>
@@ -76,7 +86,7 @@
           </article>
 
           <!-- Project 3: Pulse -->
-          <article class="card reveal">
+          <article class="card reveal" data-category="code">
             <span class="card-tag">Automation</span>
             <h3 class="card-title">Pulse</h3>
             <p class="card-desc">A Python bot that sends me a daily summary every morning, scheduled with GitHub Actions. My first taste of automation.</p>
