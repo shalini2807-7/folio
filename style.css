@@ -501,3 +501,78 @@ ul {
   color: white;
   border-color: #3b7a57;
 }
+
+/* --- Blog Section Layout --- */
+.blog-section {
+  padding: 4rem 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Individual Blog Post Cards */
+.blog-card {
+  background: transparent;
+  border: 1px solid #e0dbd1; /* Matches your light mode lines */
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px); /* Premium lifting element on focus hover */
+}
+
+.blog-date {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.blog-excerpt {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-link {
+  margin-top: auto;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.blog-link:hover {
+  color: #3b7a57;
+}
+
+/* --- Dark Mode Adaptation --- */
+.dark .blog-card {
+  border-color: #444;
+}
+
+.dark .blog-link:hover {
+  color: #3b7a57;
+}
