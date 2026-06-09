@@ -442,3 +442,48 @@ ul {
     width: 100%;
   }
 }
+
+/* Filter Buttons Layout */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid #e0dbd1; /* Use your theme border color */
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: #3b7a57; /* Use your accent blue/green color */
+  color: white;
+  border-color: #3b7a57;
+}
+
+.project-count {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* --- Smooth Fade Animation Classes --- */
+.card {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hidden state during filtering */
+.card.hide {
+  opacity: 0;
+  transform: scale(0.95);
+  display: none; 
+}
