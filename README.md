@@ -3,10 +3,10 @@
 
 A clean, responsive, and minimalist developer portfolio website built to showcase my journey as a UI Designer & Web Developer. The site features a curated look at my latest work, an interactive dark-mode toggle, an overview of my technical toolkit, and a clean interface for getting in touch.
 
-## 🚀 Live Demo & Design
+##  Live Demo & Design
 * **🔗 Live Link:** *[Insert your Netlify/GitHub Pages link here]*
 
-## ✨ Features
+##  Features
 
 *  Minimalist UI/UX:** A cozy, high-contrast, reader-friendly layout built with custom design tokens.
 *  Project Showcases:** Interactive cards detailing my design work, web builds, and automation scripts.
@@ -16,7 +16,7 @@ A clean, responsive, and minimalist developer portfolio website built to showcas
 
 ---
 
-## 📂 Featured Projects
+##  Featured Projects
 
 ### 1. Tide (UI / UX Design)
 A complete task-manager application design built in Figma. It utilizes a robust token-based design system, spans seven fully connected screens, and features a clickable prototype ready for development.
@@ -29,7 +29,7 @@ A Python-based automation bot that sends me a curated daily summary every mornin
 
 ---
 
-## 🛠️ Tech Stack & Skills
+##  Tech Stack & Skills
 
 ### Core Technologies
 * **Design & Prototyping:** Figma & UI Design 
@@ -43,6 +43,6 @@ A Python-based automation bot that sends me a curated daily summary every mornin
 
 ---
 
-## 🔧 Local Development
+##  Local Development
 
 This is a purely frontend project running on standard web standards.
