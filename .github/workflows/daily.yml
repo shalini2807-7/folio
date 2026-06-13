@@ -1,16 +1,13 @@
-# The workflow name - appears in the Actions tab
 name: Pulse - Daily Summary Bot
 
 on:
-  # Scheduled run: 2:30 AM UTC = 8:00 AM IST
   schedule:
-    - cron: '30 2 * * *'
-  # Manual trigger: adds a 'Run workflow' button for testing
-  workflow_dispatch:
+    - cron: '30 2 * * *'  # Runs daily
+  workflow_dispatch:      # Allows manual testing button
 
 jobs:
-  run-pulse:                  # job name (your choice)
-    runs-on: ubuntu-latest    # GitHub's free Linux server
+  run-pulse:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -21,18 +18,14 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run Pulse bot
-        run: python bot.py
+        run: |
+          pip install -r requirements.txt
+          pip install requests
 
       - name: Run Pulse bot
         env:
-          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}  # Fetches securely from settings
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
         run: python bot.py
-        
-      - name: Upload summary as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: daily-summary
-          path: daily_summary.txt
