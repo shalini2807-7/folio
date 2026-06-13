@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: daily-summary
-          path: daily-summary_txt
+          path: daily_summary.txt
