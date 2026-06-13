@@ -57,7 +57,7 @@ def run():
     # Save to a file (uploaded as a downloadable artifact)
     with open("daily_summary.txt", "w", encoding="utf-8") as f:
         f.write(summary)
-        print("Pulse ran successfully.")
+    print("Pulse ran successfully.")
 
 if __name__ == "__main__":
     run()
